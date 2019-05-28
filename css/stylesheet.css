@@ -81,13 +81,32 @@ border-radius: 0 0 15px 15px;
   border-top: 2px solid #000;
   height: 47px;
   border-radius: 0 0 5px 5px;
-  padding-left: 225px;
+  padding-left: 229px;
+}
+.menu-item{
+  border-left : 2px solid #fff;
+  float: left;
+  position: relative;
+  padding: 0 20px;
+}
+.menu-act .menu-item-text{
+  color : #ff0;
+  border-bottom:2px solid #000;
 }
 .menu-item-text{
+  cursor: pointer;
+  display: block;
   color: #fff;
+  line-height: 45px;
   font-size: 1.6rem;
   font-weight: 700;
   text-shadow: 0px 1px 0 #000, 1px 0px 0 #000, -1px 0px 0 #000, 0px -1px 0 #000;
+}
+.sub-menu{
+  background-color: skyblue;
+  position: absolute;
+  top : 47px;
+  display: none;
 }
 /* 비주얼 */
 .visual{
