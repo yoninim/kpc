@@ -120,33 +120,73 @@
       </nav>
     </header>
     <div class="visual">
-    <p class="visual-text">
-      web Standards &amp; Accessibility
-    </p>
-  </div>
+      <p class="visual-text">
+        web Standards &amp; Accessibility
+      </p>
+    </div>
     <main class="main">
       <div class="group group1">
         <section class="login">
           <h2 class="login-heading">로그인</h2>
-          <form action="https://formspree.io/lsg6306@naver.com" method="POST" class="login-form">
+          <form
+            action="https://formspree.io/lsg6306@naver.com"
+            method="POST"
+            class="login-form"
+          >
             <fieldset>
               <legend>회원 로그인 폼</legend>
               <div class="user-email">
                 <label for="user-email">아이디</label>
-                <input name="uid" type="email" id="user-email" required placeholder="이메일 주소">
+                <input
+                  name="uid"
+                  type="email"
+                  id="user-email"
+                  required
+                  placeholder="이메일 주소"
+                />
               </div>
               <div class="user-pw">
                 <label for="user-pw">비밀번호</label>
-                <input name="upw" type="password" id="user-pw" maxlength="6" required placeholder="6자리 이하">
+                <input
+                  name="upw"
+                  type="password"
+                  id="user-pw"
+                  maxlength="6"
+                  required
+                  placeholder="6자리 이하"
+                />
               </div>
               <button class="btn-login" type="submit">로그인</button>
             </fieldset>
           </form>
           <ul class="sign">
-            <li><a href="#" class="icon-right-open::before">회원가입</a></li>
-            <li><a href="#" class="icon-right-open::before">아이디/비밀번호 찾기</a></li>
+            <li><a href="#" class="icon-right-open">회원가입</a></li>
+            <li>
+              <a href="#" class="icon-right-open">아이디/비밀번호 찾기</a>
+            </li>
           </ul>
         </section>
+        <h2 class="readable-hidden">유효성 검사 배너</h2>
+        <ul class="validation-list">
+          <li>
+            <a
+              href="https://validator.w3.org/"
+              target="_blank"
+              title="마크업 유효성 검사 사이트로 이동(새창)"
+            >
+              W3C Markup Validation
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://jigsaw.w3.org/css-validator/"
+              target="_blank"
+              title="CSS 유효성 검사 사이트로 이동(새창)"
+            >
+              CSS Validation Service
+            </a>
+          </li>
+        </ul>
       </div>
       <div class="group group2">그룹2</div>
       <div class="group group3">그룹3</div>
