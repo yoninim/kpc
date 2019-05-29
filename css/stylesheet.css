@@ -21,7 +21,7 @@ html{
   font-size: 10px;
 }
 body{
-  background-color: #aaa;
+  background: url('images/bg_flower.png') no-repeat 50% 0,  #aaa linear-gradient(#aaa 0%,#eee 30%, #fff 50%, #fff 100%);
   color :#181818;
   font-family: 'Spoqa Han Sans', sans-serif;
   font-size: 1.4rem;
@@ -138,8 +138,7 @@ border-radius: 0 0 15px 15px;
 }
 /* 비주얼 */
 .visual{
-background-color: orangered;  
-height: 10vh;
+height: 120px;
 }
 /* 메인 */
 .main{
