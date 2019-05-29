@@ -1,101 +1,109 @@
 @charset "utf-8";
-@import url('fontello.css');
+@import url("fontello.css");
 /* @import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css'); */
-@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
-@import url('normalize.css');
-@import url('reset.css');
+@import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
+@import url("normalize.css");
+@import url("reset.css");
 /* 숨길 콘텐츠 */
-.readable-hidden, legend{
+.readable-hidden,
+legend {
   position: absolute;
   width: 1px;
   height: 1px;
   overflow: hidden;
   margin: -1px;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
 }
 /* 기본스타일 */
-*,*::before, *::after{
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
-html{
+html {
   font-size: 10px;
 }
-body{
-  background: url('images/bg_flower.png') no-repeat 50% 0,  #aaa linear-gradient(#aaa 0%,#eee 50%, #fff 70%, #fff 100%);
-  color :#181818;
-  font-family: 'Spoqa Han Sans', sans-serif;
+body {
+  background: url("images/bg_flower.png") no-repeat 50% 0,
+    #aaa linear-gradient(#aaa 0%, #eee 50%, #fff 70%, #fff 100%);
+  color: #181818;
+  font-family: "Spoqa Han Sans", sans-serif;
   font-size: 1.4rem;
 }
-a{
+a {
   color: inherit;
   text-decoration: none;
 }
 /* 플로트 이슈를 해결하기 위한 클래스 */
-.clearfix::after{
-  content: '';
+.clearfix::after {
+  content: "";
   clear: both;
   display: block;
 }
 /* 레이아웃 */
-.header, .visual, .main, .slogan, .footer{
+.header,
+.visual,
+.main,
+.slogan,
+.footer {
   width: 940px;
   margin: 0 auto;
 }
 /* 헤더 */
-.header{
-background-color: white;  
-position: relative;
-padding: 0px 30px 40px;
-border-radius: 0 0 15px 15px;
+.header {
+  background-color: white;
+  position: relative;
+  padding: 0px 30px 40px;
+  border-radius: 0 0 15px 15px;
 }
 /* 로고 */
-.logo{
+.logo {
   position: absolute;
-  left : 65px;
+  left: 65px;
   top: 48px;
 }
 /* 멤버링크 */
-.member{
+.member {
   float: right;
   text-transform: uppercase;
   padding: 2px 0;
   position: relative;
   right: -10px;
 }
-.member li{
+.member li {
   /* background-color: pink; */
-  float : left;
+  float: left;
 }
-.member li:nth-child(n+2)::before{
-  content: ':';
+.member li:nth-child(n + 2)::before {
+  content: ":";
 }
-.member a{
+.member a {
   display: inline-block;
   padding: 8px;
 }
 /* 메인 메뉴 */
-.navigation{
+.navigation {
   clear: both;
 }
-.menu{
-  background-color:#ed552f;
-  background-image: linear-gradient(#e97e2e,#ed552f,#ed552f,#e97e2e);
+.menu {
+  background-color: #ed552f;
+  background-image: linear-gradient(#e97e2e, #ed552f, #ed552f, #e97e2e);
   border-top: 2px solid #000;
   height: 47px;
   border-radius: 0 0 5px 5px;
   padding-left: 229px;
 }
-.menu-item{
-  border-left : 2px solid #fff;
+.menu-item {
+  border-left: 2px solid #fff;
   float: left;
   position: relative;
   padding: 0 20px;
 }
-.menu-act .menu-item-text{
-  color : #ff0;
-  border-bottom:2px solid #000;
+.menu-act .menu-item-text {
+  color: #ff0;
+  border-bottom: 2px solid #000;
 }
-.menu-item-text{
+.menu-item-text {
   cursor: pointer;
   display: block;
   color: #fff;
@@ -104,65 +112,71 @@ border-radius: 0 0 15px 15px;
   font-weight: 700;
   text-shadow: 0px 1px 0 #000, 1px 0px 0 #000, -1px 0px 0 #000, 0px -1px 0 #000;
 }
-.sub-menu{
+.sub-menu {
   position: absolute;
-  top : 47px;
+  top: 47px;
   white-space: nowrap;
   display: none;
 }
-.menu-act .sub-menu{
+.menu-act .sub-menu {
   display: block;
 }
-.sub-menu1, .sub-menu2, .sub-menu3{
-  left:0;
+.sub-menu1,
+.sub-menu2,
+.sub-menu3 {
+  left: 0;
 }
-.sub-menu4, .sub-menu5, .sub-menu6{
-  right:0;
+.sub-menu4,
+.sub-menu5,
+.sub-menu6 {
+  right: 0;
 }
-.sub-menu li, .sub-menu a{
+.sub-menu li,
+.sub-menu a {
   display: inline-block;
 }
-.sub-menu a{
+.sub-menu a {
   padding: 8px 0 8px 10px;
   margin-right: 10px;
 }
-.sub-menu a::before{
-  content: '\f192';
-  font-family: 'fontello';
+.sub-menu a::before {
+  content: "\f192";
+  font-family: "fontello";
   width: 1em;
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
-.sub-menu a:hover::before{
-  content: '\e800';
-  font-family: 'fontello';
+.sub-menu a:hover::before {
+  content: "\e800";
+  font-family: "fontello";
 }
 /* 비주얼 */
-@keyframes bgAni{
-  0%{
+@keyframes bgAni {
+  0% {
     opacity: 1;
   }
-  100%{
+  100% {
     opacity: 0;
   }
 }
-@keyframes textAni{
-  0%{
-    color: rgba(0,0,0,0);
+@keyframes textAni {
+  0% {
+    color: rgba(0, 0, 0, 0);
     font-size: 12px;
     transform: translate(0, 0);
   }
-  100%{
-    color : rgba(0,0,0,1);
+  100% {
+    color: rgba(0, 0, 0, 1);
     font-size: 24px;
     transform: translate(400px, 75px);
   }
 }
-.visual{
-height: 120px;
-position: relative;
+.visual {
+  height: 120px;
+  position: relative;
 }
-.visual::before, .visual::after{
-  content: '';
+.visual::before,
+.visual::after {
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -171,78 +185,78 @@ position: relative;
   z-index: -1;
   animation: bgAni 2000ms infinite alternate;
 }
-.visual::before{
-  background: url('images/ani_flower_01.png') no-repeat 0 -10px,
-  url('images/ani_flower_02.png') no-repeat 670px 0 ;
+.visual::before {
+  background: url("images/ani_flower_01.png") no-repeat 0 -10px,
+    url("images/ani_flower_02.png") no-repeat 670px 0;
 }
-.visual::after{
-  background: url('images/ani_flower_03.png') no-repeat 300px 0,
-  url('images/ani_flower_04.png') no-repeat 800px 0 ;
+.visual::after {
+  background: url("images/ani_flower_03.png") no-repeat 300px 0,
+    url("images/ani_flower_04.png") no-repeat 800px 0;
   animation-delay: 1000ms;
 }
-.visual-text{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+.visual-text {
+  font-family: Georgia, "Times New Roman", Times, serif;
   animation: textAni 1000ms forwards;
   display: inline-block;
   max-width: 540px;
 }
 /* 메인 */
-.main{
-background-color: #fff;
-border-radius: 15px 15px 0 0;  
-height: 450px;
-padding: 30px;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+.main {
+  background-color: #fff;
+  border-radius: 15px 15px 0 0;
+  height: 450px;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.group1{
+.group1 {
   width: 250px;
 }
-.group2{
+.group2 {
   width: 380px;
 }
-.group3{
+.group3 {
   width: 190px;
 }
 /* 로그인 */
-.login{
+.login {
   border-radius: 5px;
   background: orangered radial-gradient(circle at right top, #e97e2e, #ed552f);
   box-shadow: 5px 5px 0 0 #aaa;
   padding: 10px;
 }
-.login-heading{
+.login-heading {
   color: #ff0;
   font-size: 1.5rem;
   font-weight: 700;
   text-indent: 10px;
 }
-.login-form{
-  margin-top : 10px; 
+.login-form {
+  margin-top: 10px;
   background-color: #fff;
   border-radius: 5px 5px 0 0;
   padding: 10px 10px 0 10px;
 }
-.login-form fieldset{
+.login-form fieldset {
   position: relative;
   border-bottom: 1px solid #aaa;
   padding-bottom: 10px;
 }
-.user-pw{
+.user-pw {
   margin-top: 6px;
 }
-.login-form label{
+.login-form label {
   display: inline-block;
-  width : 4em;
+  width: 4em;
 }
-.login-form input{
+.login-form input {
   width: 90px;
   height: 22px;
   border: 1px solid #aaa;
   padding: 1px 1px 1px 5px;
 }
-.btn-login{
+.btn-login {
   position: absolute;
   top: 0;
   right: 0px;
@@ -255,7 +269,7 @@ justify-content: space-between;
   background-color: orangered;
   font-size: 1.2rem;
 }
-.sign{
+.sign {
   background-color: #fff;
   padding: 10px;
   border-radius: 0 0 5px 5px;
@@ -263,7 +277,7 @@ justify-content: space-between;
   justify-content: space-between;
   letter-spacing: -1px;
 }
-.sign .icon-right-open::before{
+.sign .icon-right-open::before {
   color: #ed552f;
   margin: 0;
 }
@@ -280,17 +294,29 @@ justify-content: space-between;
    float: right; 
    clear: both; 
    } */
+/* 유효성 검사 배너 */
+.validation-list{
+  margin-top: 25px;
+}
+.validation-list a{
+  display: block;
+  background: url("images/validation_icon.png") no-repeat 15px 50%,
+              linear-gradient(to bottom, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 30px;
+  padding: 5px 5px 5px 35px;
+}
 /* 슬로건 */
-.slogan{
-background-color: pink;  
-height: 10vh;
+.slogan {
+  background-color: pink;
+  height: 10vh;
 }
 /* 푸터 */
-.footer-bg{
-background-color: purple;  
+.footer-bg {
+  background-color: purple;
 }
 /* 푸터 */
-.footer{
-background-color: yellow;
-height: 10vh;  
+.footer {
+  background-color: yellow;
+  height: 10vh;
 }
