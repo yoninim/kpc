@@ -324,7 +324,7 @@ a {
 }
 .term-list-subject,.term-list-brief{
   float: right;
-  width: 140px;
+  width: 145px;
 }
 .term-list-subject{
   color: #296897;
@@ -391,6 +391,11 @@ a {
   padding: 0 10px;
   height: 22px;
   font-size: 1.3rem
+}
+.board {
+  display: block;
+  position: absolute;
+  float: right;
 }
 /* 슬로건 */
 .slogan {
