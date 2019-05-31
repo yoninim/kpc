@@ -528,7 +528,7 @@ a {
 }
 .news-more::before{
   color: hsla(110, 70%, 30%, 1);
-
+}
 /* 실습 내용
 .news{
   margin-top: 20px;
@@ -556,6 +556,95 @@ a {
 }
 .news-more::before{
   color: hsla(110, 70%, 30%, 1);
+} */
+
+/* 신규이벤트 및 관련 사이트 */
+.event-related{
+  background: #ccc linear-gradient( #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px;
+}
+.event{
+  position: relative;
+}
+.related{
+  border-top: 1px solid #aaa;
+  }
+.event-heading , .related-heading{
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.point-color{
+  color: #ed552f;
+}
+.event-thumbnail, .event-brief{
+  margin: 10px 0;
+}
+.event-thumbnail{
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px #aaa;
+}
+.btn-event{
+overflow: hidden;
+height: 24px;
+position: absolute;
+top: 0;
+right: 0;
+}
+.btn-event-prev, .btn-event-next{
+  float: left;
+  width: 19px;
+  height: 0;
+  padding: 24px 0 0 0;
+  margin-left: 5px;
+  background: url('images/back_forward.png') no-repeat;
+  border: 0;
+}
+.btn-event-next{
+  background-position: 100% 0;
+}
+.related-list{
+  background-color: #fff;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  height: 27;
+  overflow: hidden;
+}
+/* 실습 내용
+.event-related{
+  background: #aaa radial-gradient(circle at right top, #aaa, #eee);
+  border: 1px solid #181818;
+  padding: 10px;
+  border-radius: 5px;
+}
+.point-color{
+  color: #ed552f;
+}
+.event-heading , .related-heading{
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.event{
+  position: relative;
+  border-bottom: #000;
+}
+.event-thumbnail{
+  box-shadow: 0 15px 15px 0 #eee;
+}
+.btn-event{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 18;
+  background: url("images/back_forward.png") no-repeat;
+}
+.related-act{
+  display: block;
+}
+.related-list{
+  display: none;
 } */
 
 /* 슬로건 */
