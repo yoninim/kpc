@@ -570,6 +570,7 @@ a {
 }
 .related{
   border-top: 1px solid #aaa;
+  padding-top: 10px;
   }
 .event-heading , .related-heading{
   font-weight: 700;
@@ -609,8 +610,18 @@ right: 0;
   margin-top: 10px;
   border-radius: 5px;
   border: 1px solid #aaa;
-  height: 27;
+  height: 27px;
   overflow: hidden;
+  transition: all .4s;
+}
+.related-list:hover{
+  height: 137px;
+  padding: 5px 0;
+}
+.related-list a{
+  display: block;
+  line-height: 25px;
+  text-indent: 25px;
 }
 /* 실습 내용
 .event-related{
