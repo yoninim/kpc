@@ -722,7 +722,7 @@ right: 0;
 .slogan {
   padding: 15px 100px 15px 100px;
   position: relative;
-  height: 10vh;
+  /* height: 10vh; */
 }
 .slogan-heading{
   position: absolute;
@@ -735,7 +735,7 @@ right: 0;
   align-items: center;
 }
 .slogan-heading::after{
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -752,7 +752,7 @@ right: 0;
   top: 10px;
 }
 .slogan-content q::after{
-  content: '';
+  content: "";
 }
 /* 푸터 */
 .footer-bg {
